@@ -1,0 +1,71 @@
+{
+    "status": "ready",
+    "scope": "backend",
+    "lang": "java",
+    "deps": [
+        "h2",
+        "jakarta.validation-api",
+        "java.scaffold",
+        "spring-boot-maven-plugin",
+        "spring-boot-starter-data-jpa",
+        "spring-boot-starter-parent",
+        "spring-boot-starter-test",
+        "spring-boot-starter-web",
+        "spring-boot-starter"
+    ],
+    "bias": "spring-boot",
+    "block_list": [
+        ".mvn/",
+        "mvnw.cmd",
+        "mvnw",
+        "pom.xml",
+        "target/"
+    ],
+    "notes": [
+        {
+            "path": "src/main/java/br/com/meta3/java/scaffold/api/controllers/",
+            "bias": "API layer (entry point), exposes HTTP endpoints"
+        },
+        {
+            "path": "src/main/java/br/com/meta3/java/scaffold/api/dtos/",
+            "bias": "Data Transfer Objects for API requests/responses"
+        },
+        {
+            "path": "src/main/java/br/com/meta3/java/scaffold/api/dtos/ArquivoDTO.java",
+            "bias": "This is a DTO used to format and send 'Arquivo' data in API responses."
+        },
+        {
+            "path": "src/main/java/br/com/meta3/java/scaffold/api/dtos/ListArquivosRequestDTO.java",
+            "bias": "This is a DTO used to receive and validate parameters for an API request to filter 'Arquivos'."
+        },
+        {
+            "path": "src/main/java/br/com/meta3/java/scaffold/application/services/",
+            "bias": "Application business logic (implementations of domain)"
+        },
+        {
+            "path": "src/main/java/br/com/meta3/java/scaffold/domain/",
+            "bias": "abstractions for services and repositories"
+        },
+        {
+            "path": "src/main/java/br/com/meta3/java/scaffold/domain/entities/",
+            "bias": "Domain models for services and repositories"
+        },
+        {
+            "path": "src/main/java/br/com/meta3/java/scaffold/domain/entities/Arquivo.java",
+            "bias": "This is the database entity model for 'Arquivo', mapping its fields to the database table."
+        },
+        {
+            "path": "src/main/java/br/com/meta3/java/scaffold/infrastructure/repositories/",
+            "bias": "Data persistence logic (implementations of domain)"
+        },
+        {
+            "path": "src/main/resources/",
+            "bias": "Configuration files"
+        },
+        {
+            "path": "src/test/",
+            "bias": "Test files"
+        }
+    ],
+    "translation_table": []
+}
