@@ -2,7 +2,6 @@ package br.com.meta3.java.scaffold.api.dtos;
 
 import br.com.meta3.java.scaffold.domain.entities.Arquivo;
 import com.fasterxml.jackson.annotation.JsonFormat;
-import com.fasterxml.jackson.annotation.JsonProperty; // Added for backward JSON compatibility
 import java.time.LocalDateTime;
 import java.util.Objects;
 
@@ -47,8 +46,6 @@ public class ArquivoDTO {
         this.id = id;
     }
 
-    // TODO: (REVIEW) Maintain backward JSON compatibility for legacy 'codigodaescola' field
-    @JsonProperty("codigodaescola")
     public Long getCodigoEscola() {
         return codigoEscola;
     }
