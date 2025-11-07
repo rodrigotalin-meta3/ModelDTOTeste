@@ -1,5 +1,4 @@
 {
-    "status": "running",
     "scope": "backend",
     "lang": "java",
     "deps": [
